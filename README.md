@@ -30,7 +30,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/aaron-clarusway/recap-1_django/blob/main/visdor.png)
+![screenshot](https://github.com/MEsen1/Visdor-Education-Web/blob/main/static/visdor.jpg)
 
 ### Built With
 
@@ -67,8 +67,4 @@ $ git clone https://github.com/MEsen1/Visdor-Education-Web.git
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-
-- Linkedin [@your-linkedin](https://{linkedin.com/your-username})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@your-username](https://github.com/MEsen1)
