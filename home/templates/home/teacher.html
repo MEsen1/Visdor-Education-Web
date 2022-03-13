@@ -13,21 +13,22 @@
       </div>
       <div class="teacher_container layout_padding2">
         <div class="row">
+          {% for tc in teacher %}
           <div class="col-md-3 col-sm-6">
             <div class="box">
               <div class="img-box">
-                <img class="" src="{% static 'images/teacher-1.jpg' %}"  alt="Card image cap">
+                <img class="" src="{{tc.image.url}}"  alt="Card image cap">
               </div>
               <div class="detail-box">
                 <p>
                   <h5>
-                    Rose Adams
+                    {{tc.first_name}} {{tc.last_name}}
                   </h5>
                 </p>
               </div>
             </div>
           </div>
-     
+     {% endfor %}
         </div>
       </div>
       <div class="btn-box">

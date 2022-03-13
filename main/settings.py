@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # my apps
     "home",
     # third party
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -79,24 +80,24 @@ WSGI_APPLICATION = "main.wsgi.application"
 ##############################################################################
 
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
-
 # DATABASES = {
 #     "default": {
-#         "ENGINE": "django.db.backends.postgresql_psycopg2",
-#         "NAME": config("SQL_DATABASE"),
-#         "USER": config("SQL_USER"),
-#         "PASSWORD": config("SQL_PASSWORD"),
-#         "HOST": config("SQL_HOST"),
-#         "PORT": config("SQL_PORT"),
-#         "ATOMIC_REQUESTS": True,
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
 #     }
 # }
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": config("SQL_DATABASE"),
+        "USER": config("SQL_USER"),
+        "PASSWORD": config("SQL_PASSWORD"),
+        "HOST": config("SQL_HOST"),
+        "PORT": config("SQL_PORT"),
+        "ATOMIC_REQUESTS": True,
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -142,3 +143,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = '/'
